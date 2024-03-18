@@ -56,6 +56,8 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://localhost:3000");
         configuration.addAllowedOrigin("http://localhost:8080");
+        configuration.addAllowedOrigin("https://ewhathon-notegather-vercel-test.vercel.app/");
+        configuration.addAllowedOrigin("https://ewhathon-notegather-vercel-test.vercel.app/");
         configuration.addAllowedMethod("*"); //모든 Method 허용(POST, GET, ...)
         configuration.addAllowedHeader("*"); //모든 Header 허용
         configuration.setMaxAge(Duration.ofSeconds(3600)); //브라우저가 응답을 캐싱해도 되는 시간(1시간)
